@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spark — Hesap Silme / Account Deletion</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 60px; color: #1C1C18; background: #FCF9F2; line-height: 1.6; }
+  h1 { color: #AE3115; font-size: 26px; }
+  h2 { font-size: 17px; margin-top: 32px; color: #1C1C18; }
+  p { color: #2D2A2A; }
+  ul, ol { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .back { display: inline-block; margin-bottom: 20px; color: #AE3115; text-decoration: none; font-weight: 600; }
+  .lang-toggle { margin-bottom: 24px; }
+  .lang-toggle button { font-family: inherit; font-size: 14px; font-weight: 700; padding: 8px 16px; border: 1.5px solid #2D2A4A; background: #FFF; color: #1C1C18; cursor: pointer; border-radius: 4px; }
+  .lang-toggle button.active { background: #F4D35E; }
+  .lang-toggle button:first-child { margin-right: 8px; }
+  #en { display: none; }
+  footer { margin-top: 48px; font-size: 13px; color: #59413C; }
+  code { background: #F0EEE7; padding: 1px 6px; border-radius: 3px; }
+</style>
+</head>
+<body>
+  <a class="back" href="index.html">← Spark</a>
+  <div class="lang-toggle">
+    <button id="btn-tr" class="active" onclick="showLang('tr')">Türkçe</button>
+    <button id="btn-en" onclick="showLang('en')">English</button>
+  </div>
+
+  <div id="tr">
+    <h1>Hesap ve Veri Silme</h1>
+    <p>Bu sayfa, <strong>HegionSoft</strong> tarafından geliştirilen <strong>Spark</strong> uygulamasının hesap ve veri silme talimatlarını içerir.</p>
+
+    <h2>1. Uygulama içinden (önerilen, anında)</h2>
+    <ol>
+      <li>Spark uygulamasını aç.</li>
+      <li>Profil sekmesine git, sağ üstteki dişli ikonuna (Ayarlar) dokun.</li>
+      <li><strong>Hesap</strong> bölümünde <strong>"Hesabı Sil"</strong>a dokun ve onayla.</li>
+    </ol>
+    <p>Onayladığın anda hesabın ve ilişkili tüm verilerin sunucularımızdan <strong>kalıcı olarak</strong> silinir. Bu işlem geri alınamaz.</p>
+
+    <h2>2. Uygulamaya erişemiyorsan</h2>
+    <p>Hesabının kayıtlı olduğu e-posta adresinden <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a> adresine "Hesap Silme Talebi" konu başlığıyla yaz. Talebini en geç <strong>30 gün</strong> içinde işleme alır ve hesabını sileriz.</p>
+
+    <h2>3. Silinen veriler</h2>
+    <ul>
+      <li>Hesap bilgilerin (e-posta, kullanıcı adı, profil fotoğrafı)</li>
+      <li>Tüm paylaşımların (fotoğraf/metin/ses)</li>
+      <li>Beğenilerin ve yorumların</li>
+      <li>Arkadaşlık bağlantıların ve istekleri</li>
+      <li>Bildirim/cihaz kimliğin (FCM token)</li>
+      <li>Gün serisi ve diğer kullanım istatistiklerin</li>
+    </ul>
+
+    <h2>4. Saklanan veriler / istisnalar</h2>
+    <p>Apple/Google/RevenueCat üzerinden yaptığın abonelik/satın alma kayıtları, bu platformların kendi muhasebe ve yasal saklama yükümlülükleri gereği bizim dışımızda ayrıca tutulabilir. Bu kayıtlara erişimimiz ya da bunları silme yetkimiz yoktur — ilgili mağaza hesabından (App Store/Google Play) yönetilmesi gerekir.</p>
+
+    <h2>5. Daha fazla bilgi</h2>
+    <p>Hangi verileri neden işlediğimiz için <a href="privacy.html">Gizlilik Politikası</a>'na bakabilirsin. Sorular için: <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+  </div>
+
+  <div id="en">
+    <h1>Account and Data Deletion</h1>
+    <p>This page contains account and data deletion instructions for <strong>Spark</strong>, developed by <strong>HegionSoft</strong>.</p>
+
+    <h2>1. From within the app (recommended, immediate)</h2>
+    <ol>
+      <li>Open the Spark app.</li>
+      <li>Go to the Profile tab, tap the gear icon (Settings) in the top right.</li>
+      <li>Under <strong>Account</strong>, tap <strong>"Delete Account"</strong> and confirm.</li>
+    </ol>
+    <p>As soon as you confirm, your account and all associated data are <strong>permanently</strong> deleted from our servers. This cannot be undone.</p>
+
+    <h2>2. If you can't access the app</h2>
+    <p>Email <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a> from your account's registered email address with the subject "Account Deletion Request." We'll process your request and delete your account within <strong>30 days</strong>.</p>
+
+    <h2>3. Data that gets deleted</h2>
+    <ul>
+      <li>Your account info (email, username, profile photo)</li>
+      <li>All your submissions (photo/text/audio)</li>
+      <li>Your likes and comments</li>
+      <li>Your friend connections and requests</li>
+      <li>Your notification/device identifier (FCM token)</li>
+      <li>Your streak and other usage statistics</li>
+    </ul>
+
+    <h2>4. Data retained / exceptions</h2>
+    <p>Subscription/purchase records made through Apple/Google/RevenueCat may be retained separately by those platforms under their own accounting and legal retention obligations. We have no access to, or authority to delete, those records — they must be managed through the relevant store account (App Store/Google Play).</p>
+
+    <h2>5. More information</h2>
+    <p>See our <a href="privacy.html">Privacy Policy</a> for what data we process and why. Questions: <a href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+  </div>
+
+  <footer>HegionSoft — info@hegionsoft.com</footer>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('tr').style.display = lang === 'tr' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+</body>
+</html>
