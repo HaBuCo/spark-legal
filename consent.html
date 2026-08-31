@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spark — Açık Rıza Metni / Explicit Consent Text</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 60px; color: #1C1C18; background: #FCF9F2; line-height: 1.6; }
+  h1 { color: #AE3115; font-size: 26px; }
+  p { color: #2D2A2A; }
+  ul { padding-left: 20px; }
+  .back { display: inline-block; margin-bottom: 20px; color: #AE3115; text-decoration: none; font-weight: 600; }
+  .lang-toggle { margin-bottom: 24px; }
+  .lang-toggle button { font-family: inherit; font-size: 14px; font-weight: 700; padding: 8px 16px; border: 1.5px solid #2D2A4A; background: #FFF; color: #1C1C18; cursor: pointer; border-radius: 4px; }
+  .lang-toggle button.active { background: #F4D35E; }
+  .lang-toggle button:first-child { margin-right: 8px; }
+  #en { display: none; }
+  footer { margin-top: 48px; font-size: 13px; color: #59413C; }
+</style>
+</head>
+<body>
+  <a class="back" href="index.html">← Spark</a>
+  <div class="lang-toggle">
+    <button id="btn-tr" class="active" onclick="showLang('tr')">Türkçe</button>
+    <button id="btn-en" onclick="showLang('en')">English</button>
+  </div>
+
+  <div id="tr">
+    <h1>Açık Rıza Metni</h1>
+    <p>Spark uygulamasını ("Uygulama") kullanarak, Gizlilik Politikası ve KVKK Aydınlatma Metni'nde açıklanan kapsamda kişisel verilerimin işlendiğini biliyor ve anlıyorum.</p>
+    <p>Bu kapsamda, kişisel verilerimin — e-posta adresim, kullanıcı adım, profil bilgilerim, paylaştığım içerikler ve bildirim gönderimi için kullanılan cihaz kimliğim dahil — Uygulama'nın çalışması için gerekli ölçüde, yurt dışında yerleşik şu hizmet sağlayıcılara aktarılmasına AÇIK RIZAM ile onay veriyorum:</p>
+    <ul>
+      <li>Supabase Inc. (veritabanı, depolama, kimlik doğrulama altyapısı — Amerika Birleşik Devletleri/Avrupa Birliği)</li>
+      <li>Google Firebase (push bildirim altyapısı — Amerika Birleşik Devletleri)</li>
+      <li>RevenueCat Inc. (abonelik ve satın alma yönetimi — Amerika Birleşik Devletleri)</li>
+    </ul>
+    <p>Bu rızamı istediğim zaman, Ayarlar ekranından hesabımı kalıcı olarak silerek ya da info@hegionsoft.com adresine yazarak geri çekebileceğimi biliyorum. Rızamı geri çekmem halinde Uygulama'yı kullanmaya devam edemeyeceğimi (hizmet bu sağlayıcılar olmadan çalışamadığı için) anlıyorum.</p>
+  </div>
+
+  <div id="en">
+    <h1>Explicit Consent Text</h1>
+    <p>By using the Spark app (the "App"), I acknowledge and understand that my personal data is processed as described in the Privacy Policy and KVKK Privacy Notice.</p>
+    <p>In this context, I give my EXPLICIT CONSENT to my personal data — including my email address, username, profile information, the content I submit, and the device identifier used for push notifications — being transferred, to the extent necessary for the App to function, to the following service providers located outside Türkiye:</p>
+    <ul>
+      <li>Supabase Inc. (database, storage, authentication infrastructure — United States/European Union)</li>
+      <li>Google Firebase (push notification infrastructure — United States)</li>
+      <li>RevenueCat Inc. (subscription and purchase management — United States)</li>
+    </ul>
+    <p>I understand I can withdraw this consent at any time by permanently deleting my account from the Settings screen, or by writing to info@hegionsoft.com. I understand that if I withdraw consent, I will not be able to continue using the App, since the service cannot function without these providers.</p>
+  </div>
+
+  <footer>HegionSoft — info@hegionsoft.com</footer>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('tr').style.display = lang === 'tr' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+</body>
+</html>

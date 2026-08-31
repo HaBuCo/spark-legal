@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spark — Kullanım Şartları / Terms of Use</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 60px; color: #1C1C18; background: #FCF9F2; line-height: 1.6; }
+  h1 { color: #AE3115; font-size: 26px; }
+  h2 { font-size: 17px; margin-top: 32px; color: #1C1C18; }
+  p { color: #2D2A2A; }
+  .back { display: inline-block; margin-bottom: 20px; color: #AE3115; text-decoration: none; font-weight: 600; }
+  .lang-toggle { margin-bottom: 24px; }
+  .lang-toggle button { font-family: inherit; font-size: 14px; font-weight: 700; padding: 8px 16px; border: 1.5px solid #2D2A4A; background: #FFF; color: #1C1C18; cursor: pointer; border-radius: 4px; }
+  .lang-toggle button.active { background: #F4D35E; }
+  .lang-toggle button:first-child { margin-right: 8px; }
+  #en { display: none; }
+  footer { margin-top: 48px; font-size: 13px; color: #59413C; }
+</style>
+</head>
+<body>
+  <a class="back" href="index.html">← Spark</a>
+  <div class="lang-toggle">
+    <button id="btn-tr" class="active" onclick="showLang('tr')">Türkçe</button>
+    <button id="btn-en" onclick="showLang('en')">English</button>
+  </div>
+
+  <div id="tr">
+    <h1>Kullanım Şartları</h1>
+
+    <h2>1. Giriş</h2>
+    <p>Spark ("Uygulama"), HegionSoft tarafından geliştirilir ve işletilir. Uygulamayı kullanarak bu şartları kabul etmiş olursun.</p>
+
+    <h2>2. Hesap</h2>
+    <p>E-posta ile bir hesap oluşturursun. Hesabının güvenliğinden ve verdiğin bilgilerin doğruluğundan sen sorumlusun.</p>
+
+    <h2>3. İçerik</h2>
+    <p>Gönderdiğin fotoğraf, metin ve ses içerikleri, günün ortak Spark'ına bağlı olarak herkese açık galeride paylaşılır. Yasa dışı, taciz edici veya başkalarının haklarını ihlal eden içerik paylaşamazsın.</p>
+
+    <h2>4. Spark Pro</h2>
+    <p>Uygulama içi abonelik App Store veya Google Play üzerinden faturalandırılır ve otomatik yenilenir. Mevcut dönem bitmeden en az 24 saat önce iptal etmezsen bir sonraki dönem için ücretlendirilirsin. İptal işlemini ilgili mağazanın hesap ayarlarından yapabilirsin.</p>
+
+    <h2>5. Hesap Silme</h2>
+    <p>Ayarlar ekranından hesabını istediğin zaman kalıcı olarak silebilirsin; bu işlem geri alınamaz.</p>
+
+    <h2>6. Fesih</h2>
+    <p>Bu şartları ihlal etmen halinde hesabını askıya alabilir veya kapatabiliriz.</p>
+
+    <h2>7. Sorumluluk Sınırlaması</h2>
+    <p>Uygulama "olduğu gibi" sunulur, kesintisiz veya hatasız çalışacağına dair garanti verilmez.</p>
+
+    <h2>8. İletişim</h2>
+    <p>Sorularin için: info@hegionsoft.com</p>
+  </div>
+
+  <div id="en">
+    <h1>Terms of Use</h1>
+
+    <h2>1. Introduction</h2>
+    <p>Spark (the "App") is developed and operated by HegionSoft. By using the App, you agree to these terms.</p>
+
+    <h2>2. Account</h2>
+    <p>You create an account with your email. You're responsible for your account's security and the accuracy of the information you provide.</p>
+
+    <h2>3. Content</h2>
+    <p>Photos, text, and audio you submit are shared in the public gallery based on the day's shared constraint. You may not submit illegal, harassing content, or content that infringes on others' rights.</p>
+
+    <h2>4. Spark Pro</h2>
+    <p>The in-app subscription is billed through the App Store or Google Play and renews automatically. If you don't cancel at least 24 hours before the end of the current period, you'll be charged for the next period. You can cancel anytime from your store account settings.</p>
+
+    <h2>5. Account Deletion</h2>
+    <p>You can permanently delete your account at any time from the Settings screen; this action cannot be undone.</p>
+
+    <h2>6. Termination</h2>
+    <p>We may suspend or terminate your account if you violate these terms.</p>
+
+    <h2>7. Limitation of Liability</h2>
+    <p>The App is provided "as is," with no guarantee of uninterrupted or error-free operation.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions: info@hegionsoft.com</p>
+  </div>
+
+  <footer>HegionSoft — info@hegionsoft.com</footer>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('tr').style.display = lang === 'tr' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+</body>
+</html>
