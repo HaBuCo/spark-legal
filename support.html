@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spark — Destek / Support</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 60px; color: #1C1C18; background: #FCF9F2; line-height: 1.6; }
+  h1 { color: #AE3115; font-size: 26px; }
+  h2 { font-size: 17px; margin-top: 32px; color: #1C1C18; }
+  p { color: #2D2A2A; }
+  .back { display: inline-block; margin-bottom: 20px; color: #AE3115; text-decoration: none; font-weight: 600; }
+  .lang-toggle { margin-bottom: 24px; }
+  .lang-toggle button { font-family: inherit; font-size: 14px; font-weight: 700; padding: 8px 16px; border: 1.5px solid #2D2A4A; background: #FFF; color: #1C1C18; cursor: pointer; border-radius: 4px; }
+  .lang-toggle button.active { background: #F4D35E; }
+  .lang-toggle button:first-child { margin-right: 8px; }
+  #en { display: none; }
+  footer { margin-top: 48px; font-size: 13px; color: #59413C; }
+  a.mail { color: #AE3115; font-weight: 600; }
+</style>
+</head>
+<body>
+  <a class="back" href="index.html">← Spark</a>
+  <div class="lang-toggle">
+    <button id="btn-tr" class="active" onclick="showLang('tr')">Türkçe</button>
+    <button id="btn-en" onclick="showLang('en')">English</button>
+  </div>
+
+  <div id="tr">
+    <h1>Destek</h1>
+    <p><strong>Spark</strong>, <strong>HegionSoft</strong> tarafından geliştirilir. Bir soru, sorun veya öneri için bize e-posta ile ulaşabilirsin, en kısa sürede dönüş yaparız.</p>
+
+    <h2>İletişim</h2>
+    <p>E-posta: <a class="mail" href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+
+    <h2>Sık sorulanlar</h2>
+    <p><strong>Hesabımı nasıl silerim?</strong> <a href="account-deletion.html">Hesap silme sayfasına</a> bakabilirsin.</p>
+    <p><strong>Verilerim nasıl kullanılıyor?</strong> <a href="privacy.html">Gizlilik Politikası</a>'nı inceleyebilirsin.</p>
+  </div>
+
+  <div id="en">
+    <h1>Support</h1>
+    <p><strong>Spark</strong> is developed by <strong>HegionSoft</strong>. For any question, issue, or suggestion, reach out by email and we'll get back to you as soon as possible.</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a class="mail" href="mailto:info@hegionsoft.com">info@hegionsoft.com</a></p>
+
+    <h2>FAQ</h2>
+    <p><strong>How do I delete my account?</strong> See the <a href="account-deletion.html">account deletion page</a>.</p>
+    <p><strong>How is my data used?</strong> See the <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+
+  <footer>HegionSoft — info@hegionsoft.com</footer>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('tr').style.display = lang === 'tr' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+</body>
+</html>
