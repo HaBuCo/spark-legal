@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spark — Çocuk Güvenliği Standartları / Child Safety Standards</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px 60px; color: #1C1C18; background: #FCF9F2; line-height: 1.6; }
+  h1 { color: #AE3115; font-size: 26px; }
+  h2 { font-size: 17px; margin-top: 32px; color: #1C1C18; }
+  p, li { color: #2D2A2A; }
+  .back { display: inline-block; margin-bottom: 20px; color: #AE3115; text-decoration: none; font-weight: 600; }
+  .lang-toggle { margin-bottom: 24px; }
+  .lang-toggle button { font-family: inherit; font-size: 14px; font-weight: 700; padding: 8px 16px; border: 1.5px solid #2D2A4A; background: #FFF; color: #1C1C18; cursor: pointer; border-radius: 4px; }
+  .lang-toggle button.active { background: #F4D35E; }
+  .lang-toggle button:first-child { margin-right: 8px; }
+  #en { display: none; }
+  footer { margin-top: 48px; font-size: 13px; color: #59413C; }
+</style>
+</head>
+<body>
+  <a class="back" href="index.html">← Spark</a>
+  <div class="lang-toggle">
+    <button id="btn-tr" class="active" onclick="showLang('tr')">Türkçe</button>
+    <button id="btn-en" onclick="showLang('en')">English</button>
+  </div>
+
+  <div id="tr">
+    <h1>Çocuk Güvenliği Standartları</h1>
+    <p>Son güncelleme: 3 Eylül 2026</p>
+
+    <h2>1. Sıfır Tolerans</h2>
+    <p>Spark, çocukların cinsel istismarı ve istismarına yönelik materyalleri (CSAE) ve bu tür davranışları kesinlikle yasaklar. Bu tür içerik veya davranış tespit edildiğinde ilgili hesap derhal askıya alınır/kapatılır ve içerik kaldırılır.</p>
+
+    <h2>2. Yaş Sınırı</h2>
+    <p>Spark, 13 yaşın altındaki kullanıcılar için tasarlanmamıştır ve onlara yönelik değildir (bkz. <a href="terms.html">Kullanım Şartları</a>, madde 10).</p>
+
+    <h2>3. Uygulama İçi Bildirim</h2>
+    <p>Her paylaşımda ve yorumda bir "Şikayet Et" seçeneği bulunur. Kullanıcılar bu yolla uygunsuz içeriği (CSAE dahil) doğrudan uygulama içinden bildirebilir. Bir içerik farklı kullanıcılardan 5 şikayet aldığında otomatik olarak gizlenir; tüm şikayetler ayrıca ekibimiz tarafından incelenir ve gerektiğinde içerik kalıcı olarak kaldırılır, hesap askıya alınır.</p>
+
+    <h2>4. Engelleme</h2>
+    <p>Kullanıcılar, başka bir kullanıcıyı engelleyerek onun içeriğini görmeyi ve onunla etkileşimi (yorum, beğeni, arkadaşlık isteği dahil) tamamen durdurabilir.</p>
+
+    <h2>5. Yetkililere Bildirim</h2>
+    <p>Uygulamamız, çocukların güvenliğiyle ilgili tüm yürürlükteki yasalara uyar. CSAE materyaline veya davranışına rastladığımızda, ilgili yasal yükümlülüklerimiz çerçevesinde yetkili makamlara (gerektiğinde NCMEC ve/veya yerel kolluk kuvvetlerine) bildirimde bulunuruz.</p>
+
+    <h2>6. İletişim</h2>
+    <p>Çocuk güvenliğiyle ilgili endişeleriniz veya sorularınız için: <strong>info@hegionsoft.com</strong></p>
+  </div>
+
+  <div id="en">
+    <h1>Child Safety Standards</h1>
+    <p>Last updated: September 3, 2026</p>
+
+    <h2>1. Zero Tolerance</h2>
+    <p>Spark strictly prohibits child sexual abuse and exploitation (CSAE) material and behavior. When such content or behavior is detected, the associated account is immediately suspended or terminated and the content is removed.</p>
+
+    <h2>2. Age Requirement</h2>
+    <p>Spark is not designed for or directed at users under the age of 13 (see <a href="terms.html">Terms of Use</a>, section 10).</p>
+
+    <h2>3. In-App Reporting</h2>
+    <p>Every post and comment has a "Report" option. Users can report inappropriate content (including CSAE) directly from within the app. Content is automatically hidden once it receives reports from 5 different users; all reports are additionally reviewed by our team, and content is permanently removed and accounts suspended where warranted.</p>
+
+    <h2>4. Blocking</h2>
+    <p>Users can block another user to stop seeing their content and stop any interaction with them (comments, likes, friend requests included).</p>
+
+    <h2>5. Reporting to Authorities</h2>
+    <p>We comply with all applicable child safety laws. When we become aware of CSAE material or behavior, we report it to the relevant authorities (including NCMEC and/or local law enforcement as required) in line with our legal obligations.</p>
+
+    <h2>6. Contact</h2>
+    <p>For child safety concerns or questions: <strong>info@hegionsoft.com</strong></p>
+  </div>
+
+  <footer>HegionSoft — info@hegionsoft.com</footer>
+
+  <script>
+    function showLang(lang) {
+      document.getElementById('tr').style.display = lang === 'tr' ? 'block' : 'none';
+      document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('btn-tr').classList.toggle('active', lang === 'tr');
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    }
+  </script>
+</body>
+</html>
