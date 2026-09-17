@@ -1,42 +1,42 @@
-<! DOCTYPE> html >
- <html>​ dil = "tr" >
- < başlık >
- < meta karakter seti = "UTF-8" >
- < meta ad = "görünüm alanı" içerik = "genişlik=cihaz genişliği, başlangıç ​​ölçeği=1.0" >
- < title > Spark — Arkadaş daveti / Arkadaş daveti </ title >
- <style>​​
- gövde { yazı tipi ailesi : -apple-system , } "Segoe UI" , Roboto , Arial , sans-serif ; max-width : 420px ; margin : 48px auto ; padding : 0 20px ; color : # 1C1C18 ; background : # FCF9F2 ; text-align : center ; }
- h1 { renk : # AE3115 ; yazı tipi boyutu : 28 piksel ; alt kenar boşluğu : 8 piksel ; }
- .user { font-weight : 700 ; }
- p { renk : # 59413C ; satır yüksekliği : 1.5 ; }
- .btn { display : block ; width : 100% ; box-sizing : border-box ; margin : 12px 0 ; dolgu : 14px 16px ; border-radius : 8px ; font-weight : 700 ; text-decoration : none ; }
- .primary { background : # FF6B4A ; color : # 661000 ; }
- .secondary { background : # fff ; color : # AE3115 ; border : 1.5px solid # 2D2A4A ; }
- altbilgi { üst kenar boşluğu : 48 piksel ; yazı tipi boyutu : 13 piksel ; renk : # 59413C ; }
- </style>​​
- </head>​​
- <body>​​
- <h1> Kıvılcım </h1>​​​
- < p id = "lead" > Seni Spark'ta arkadaşlara davet ediyor. </ p >
- < a sınıf = "btn primary" id = "açık" href = "#" > Spark'ta aç / Spark'ta Aç </ a >
- < a sınıf = "ikincil düğme" id = "ios" href = " https://apps.apple.com/app/spark-prompts-people/id6805796114 " > App Store </ a >
- < a sınıf = "ikincil düğme" id = "android" href = " https://play.google.com/store/apps/details?id=com.hegionsoft.spark " > Google Play </ a >
- <footer> HegionSoft </footer>​​​
- <script>​​
- ( işlev () {
- var params = new URLSearchParams ( window.location.search ) ;
- var u = ( params.get ( 'u' ) || '' ) .trim ( );
- var güvenli = / ^ [A-Za-z0-9_] {2,32} $ / . test ( sen ) ? sen : '' ;
- var lead = document.getElementById ( 'lead' );
- var open = belge . getElementById ( 'açık' );
- eğer ( güvenli ) {
- yol göstermek . innerHTML = '<span class="user">@' + güvenli + '</span> seni Spark \' ta arkadaşlara davet ediyor.<br><span class="user">@' + güvenli + '</span> sizi Spark'ta arkadaş olmaya davet ediyor.' ;
- open . href = 'spark://add/' + encodeURIComponent ( safe );
- } başka {
- yol göstermek . textContent = 'Spark — günlük mikro-yaratıcılık.' ;
- open . href = ' https://apps.apple.com/app/spark-prompts-people/id6805796114 ' ;
- }
- })();
- </script>​​
- </body>​​
- </html>​​
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spark — Arkadaş daveti / Friend invite</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, Arial, sans-serif; max-width: 420px; margin: 48px auto; padding: 0 20px; color: #1C1C18; background: #FCF9F2; text-align: center; }
+  h1 { color: #AE3115; font-size: 28px; margin-bottom: 8px; }
+  .user { font-weight: 700; }
+  p { color: #59413C; line-height: 1.5; }
+  .btn { display: block; width: 100%; box-sizing: border-box; margin: 12px 0; padding: 14px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+  .primary { background: #FF6B4A; color: #661000; }
+  .secondary { background: #fff; color: #AE3115; border: 1.5px solid #2D2A4A; }
+  footer { margin-top: 48px; font-size: 13px; color: #59413C; }
+</style>
+</head>
+<body>
+  <h1>Spark</h1>
+  <p id="lead">Seni Spark'ta arkadaşlığa davet ediyor.</p>
+  <a class="btn primary" id="open" href="#">Spark'ta aç / Open in Spark</a>
+  <a class="btn secondary" id="ios" href="https://apps.apple.com/app/spark-prompts-people/id6805796114">App Store</a>
+  <a class="btn secondary" id="android" href="https://play.google.com/store/apps/details?id=com.hegionsoft.spark">Google Play</a>
+  <footer>HegionSoft</footer>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var u = (params.get('u') || '').trim();
+      var safe = /^[A-Za-z0-9_]{2,32}$/.test(u) ? u : '';
+      var lead = document.getElementById('lead');
+      var open = document.getElementById('open');
+      if (safe) {
+        lead.innerHTML = '<span class="user">@' + safe + '</span> seni Spark\'ta arkadaşlığa davet ediyor.<br><span class="user">@' + safe + '</span> invited you to be friends on Spark.';
+        open.href = 'spark://add/' + encodeURIComponent(safe);
+      } else {
+        lead.textContent = 'Spark — günlük mikro-yaratıcılık.';
+        open.href = 'https://apps.apple.com/app/spark-prompts-people/id6805796114';
+      }
+    })();
+  </script>
+</body>
+</html>
